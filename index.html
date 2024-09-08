@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">cashConverter</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <p id="logoText"></p>
+        <div class="row" id="rowInput">
+            <div class="line" id="firstLine">
+                <input type="text" id="firstInput" style="border-radius: 5px 0 0px 5px;" placeholder="USD">
+                <select id="firstCurrency" style="border-radius: 0 5px 5px 0;"></select>
+                <button type="button" id="changeCurrency"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+            </div>
+            <div class="line" id="secondLine">
+                <select id="secondCurrency" class="selectionSecond"></select>
+                <input type="text" id="secondInput" class="inputSecond" placeholder="USD">
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html

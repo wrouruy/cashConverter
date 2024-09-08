@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+input{
+    width: 200px;
+    height: 35px;
+    border: 1px solid rgb(99, 99, 99);
+    text-align: left;
+}
+select{
+    width: 60px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#changeCurrency{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+}
+#changeCurrency:hover{
+    transform: scale(1.04);
+}
+
+
+#logoText{
+    position: fixed;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    animation: logoText 1s 1;
+}
+@keyframes logoText{
+    0%{
+        color: transparent;
+    } 100%{
+        color: black;
+    }
+}
+
+.line{
+    display: flex;
+}
+.selectionSecond{
+    border-radius: 5px 0 0 5px;
+}
+.inputSecond{
+    border-radius: 0 5px 5px 0;
+}
+#rowInput{
+    background-color: rgba(0, 0, 0, 0.160);
+    padding: 20px;
+    border-radius: 10px;
+    animation: rowAnim 1 1s;
+    transition: opacity 5s;
+    transition: background-color 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+@keyframes rowAnim{
+    0%{
+        opacity: 0;
+        margin-top: 50px;
+    } 100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
