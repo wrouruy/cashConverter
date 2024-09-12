@@ -128,4 +128,3 @@ function writeWord(output, text, time){
     }, time)
 }
 writeWord('#logoText', 'cashConverter', 50)
-writeWord('#title', $('#title').text(), 50)
