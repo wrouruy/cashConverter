@@ -8,14 +8,6 @@ fetch('https://open.er-api.com/v6/latest/USD')
             $('#firstCurrency').append(`<option value="${el}">${el}</option>`)
             $('#secondCurrency').append(`<option value="${el}">${el}</option>`)
         }
-        // document.onkeydown = function(e){
-        //     if(e.keyCode === 13){
-        //         console.clear()
-        //         console.log(`${$('#firstCurrency').val()}: ${data.rates[$('#firstCurrency').val()]}`)
-        //         console.log(`${$('#secondCurrency').val()}: ${data.rates[$('#secondCurrency').val()]}`)
-        //     }
-        // }
-        console.log(currency.length)
 })
 
 $('#firstCurrency').on('input', function () {
@@ -70,46 +62,7 @@ setInterval(function(){
 
         }    
     })
-}, 100);  
-
-
-
-
-
-
-
-
-
-setInterval(function(){
-    $('#logoText').css('bottom', (window.innerHeight / 2) + 100)
-    if(window.innerWidth < 650){
-        $('#rowInput').css('flexDirection', 'column')
-        $('.line').css('margin', '10px')
-        $('#changeCurrency').css('position', 'fixed')
-        $('#changeCurrency').css('right', '10px')
-        $('#changeCurrency').css('width', '90px')
-        $('#changeCurrency').css('height', '90px')
-        $('#changeCurrency').css('fontSize', '30px')
-        $('#secondLine').css('flexDirection', 'row-reverse')
-        $('.selectionSecond').css('borderRadius', '0 5px 5px 0')
-        $('.inputSecond').css('borderRadius', '5px 0 0 5px')
-        $('#rowInput').css('backgroundColor', 'transparent')
-        $('#rowInput').css('border', 'none')
-    } else{
-        $('#rowInput').css('flexDirection', 'row')
-        $('.line').css('margin', '0px')
-        $('#changeCurrency').css('position', 'static')
-        $('#changeCurrency').css('right', 'auto')
-        $('#changeCurrency').css('width', '35px')
-        $('#changeCurrency').css('height', '35px')
-        $('#changeCurrency').css('fontSize', '15px')
-        $('#secondLine').css('flexDirection', 'row')
-        $('.inputSecond').css('borderRadius', '0 5px 5px 0')
-        $('.selectionSecond').css('borderRadius', '5px 0 0 5px')
-        $('#rowInput').css('backgroundColor', 'rgba(0, 0, 0, 0.160)')
-        $('#rowInput').css('border', '1px solid rgba(0, 0, 0, 0.15)')
-    }
-}, 50)
+}, 100);
 
 function writeWord(output, text, time){
     let endText = '';

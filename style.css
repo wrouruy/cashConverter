@@ -39,6 +39,8 @@ select{
     transition: 0.3s;
     font-size: 15px;
     margin: 0 10px 0 10px;
+    position: static;
+    right: auto;
 }
 #changeCurrency:hover{
     transform: scale(1.04);
@@ -51,6 +53,8 @@ select{
     font-weight: 700;
     display: flex;
     animation: logoText 1s 1;
+    transform: -50% -50%;
+    top: calc(50% - 100px);
 }
 @keyframes logoText{
     0%{
@@ -62,6 +66,7 @@ select{
 
 .line{
     display: flex;
+    margin: 0;
 }
 .selectionSecond{
     border-radius: 5px 0 0 5px;
@@ -77,6 +82,13 @@ select{
     transition: opacity 5s;
     transition: background-color 0.5s;
     border: 1px solid rgba(0, 0, 0, 0.15);
+    flex-direction: row;
+}
+#secondLine{
+    flex-direction: row;
+}
+.selectionSecond{
+    border-radius: 5px 0 0 5px;
 }
 @keyframes rowAnim{
     0%{
@@ -85,5 +97,33 @@ select{
     } 100%{
         opacity: 1;
         margin-top: 0;
+    }
+}
+@media screen and (max-width: 650px) {
+    #rowInput{
+        flex-direction: column;
+    }
+    .line{
+        margin: 10px;
+    }
+    #changeCurrency{
+        position: fixed;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        font-size: 30px;
+    }
+    #secondLine{
+        flex-direction: row-reverse;
+    }
+    .selectionSecond{
+        border-radius: 0 5px 5px 0;
+    }
+    .inputSecond{
+        border-radius: 5px 0 0 5px;
+    }
+    #rowInput{
+        background-color: transparent;
+        border: none;
     }
 }
